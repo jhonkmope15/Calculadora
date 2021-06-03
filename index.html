@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--CSS-->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Calculadora</title>
+</head>
+
+<body>
+    <!--navegación-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-secondary ">
+        <div class="container">
+            <img src="/icon/Group 4LogoMoctopus.svg" alt="Icono" height="50px">
+        </div>
+    </nav>
+
+    <!--Contenido-->
+    <div class="container">
+
+        <div class="row justify-content-center pt-2">
+            <div class="col-6 border border-2 border-dark">
+                <!--navbar-->
+                <div class="row border border-dark bg-dark text-white">
+                    <div class="col">
+                        <a class="nav-link dropdown-toggle navbar-brand text-white" href="#" id="navbarDropdownMenuLink"
+                            role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Style
+                        </a>
+                        <ul class="col-2 dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="#" id="dark">dark</a></li>
+                            <li><a class="dropdown-item" href="#" id="light">Light</a></li>                        </ul>
+                    </div>
+                    <div class="col">
+                        <div class="d-flex flex-row-reverse bd-highlight">
+                            <div class="p-2 bd-highlight fs-5">Color</div>
+                        </div>
+                    </div>
+                </div>
+                <!--Display-->
+                <div class="row border border-dark p-2 bg-dark">
+                    <div class="d-flex flex-row-reverse bd-highlight display">
+                        <div class="p-2 bd-highlight fs-1" id="resultado"></div>
+                    </div>
+                </div>
+                <!--Operadores-->
+
+                <div class="row border border-dark p-1" id="fondo">
+                    <div class="col">
+                        <div class="row pe-1">
+                            <button type="button" value="7" class="btn btn-primary mb-1 fs-5" id="siete">7</button>
+                            <button type="button" value="4" class="btn btn-primary mb-1 fs-5" id="cuatro">4</button>
+                            <button type="button" value="1" class="btn btn-primary mb-1 fs-5" id="uno">1</button>
+                            <button type="button" class="btn btn-secondary mb-1 fs-5" id="limpiar">CE</button>
+
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="row pe-1">
+                            <button type="button" value="8" class="btn btn-primary mb-1 fs-5" id="ocho">8</button>
+                            <button type="button" value="5" class="btn btn-primary mb-1 fs-5" id="cinco">5</button>
+                            <button type="button" value="2" class="btn btn-primary mb-1 fs-5" id="dos">2</button>
+                            <button type="button" value="0" class="btn btn-primary fs-5" id="cero">0</button>
+                        </div>
+                    </div>
+                    <div class="col ">
+                        <div class="row pe-1">
+                            <button type="button" value="9" class="btn btn-primary mb-1 fs-5" id="nueve">9</button>
+                            <button type="button" value="6" class="btn btn-primary mb-1 fs-5" id="seis">6</button>
+                            <button type="button" value="3" class="btn btn-primary mb-1 fs-5" id="tres">3</button>
+                            <button type="button" class="btn btn-secondary mb-1 fs-5" id="reset">C</button>
+
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="row">
+                            <button type="button" class="btn btn-secondary mb-1 fs-5" id="division">/</button>
+                            <button type="button" class="btn btn-secondary mb-1 fs-5" id="multiplicacion">x</button>
+                            <button type="button" class="btn btn-secondary mb-1 fs-5" id="resta">-</button>
+                            <button type="button" class="btn btn-secondary mb-1 fs-5" id="suma">+</button>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <button type="button" class="btn btn-secondary fs-5 boton" id="igual">=</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+            
+
+        <!--script-->
+        <script src="node_modules/@popperjs/core/dist/umd/popper.min.js"></script>
+        <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script src="./js/calculadora.js"></script>
+</body>
+
+</html>
